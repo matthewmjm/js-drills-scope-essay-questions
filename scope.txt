@@ -1,0 +1,23 @@
+Questions
+What is scope? Your explanation should include the idea of global vs. local scope.
+Scope defines how a variable may be accessed, or not accessed, at different points in the code.  There are two types of scope:
+global scope and local scope.  A variable declared outside a function is considered global scope  and is able to be accessed
+through-out your code.  A variable declared within a function is considered local scope and can only be accessed within the
+function to where it resides.
+
+Why are global variables avoided?
+Global variables can cause uninteded side effects causing the code to be indeterminate which can yield different output given
+the same imput.  Thereby creating code that can be difficult to debug.
+
+Explain JavaScript's strict mode
+Strict mode will not allow a variable be declared without using the syntax of "var" in naming a variable.  This would result in
+an error.  This especially protects against any mutatiob of a global variable.
+
+What are side effects, and what is a pure function?
+Side efffects is when a function looks outside itself, or its local scope, to access a variable in a parent scope and alters
+the value of that variable.   A pure function is a function that will always return the same value, give the same input.
+This is called a determinate function.  Also, in order for a function to be pure, it must not have any side effects.
+
+Explain variable hoisting in JavaScript.
+Hoisting is a peculiarity that occurs when JavaScript reads variables when parsing and executing code.  It refers to the way
+the JavaScript interpreter finds every variable definition within a given scope and moves it to the top of that scope.
